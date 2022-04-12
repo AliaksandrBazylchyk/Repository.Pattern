@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Repository.Pattern.Common\Repository.Pattern.Common.csproj" />
   </ItemGroup>
 
 </Project>

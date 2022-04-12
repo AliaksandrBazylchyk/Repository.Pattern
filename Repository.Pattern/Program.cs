@@ -1,9 +1,15 @@
+using Repository.Pattern.Common.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Options loader
+builder.Services.Configure<ConnectionStrings>(
+    builder.Configuration.GetSection(ConnectionStrings.Section));
 
 var app = builder.Build();
 
