@@ -17,7 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Repository.Pattern.BLL\Repository.Pattern.BLL.csproj" />
     <ProjectReference Include="..\Repository.Pattern.Common\Repository.Pattern.Common.csproj" />
+    <ProjectReference Include="..\Repository.Pattern.DAL\Repository.Pattern.DAL.csproj" />
   </ItemGroup>
 
 </Project>
